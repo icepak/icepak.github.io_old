@@ -1,0 +1,20 @@
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.9; background-color: #111111; z-index: 9999; display: none;">
+  <!-- <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" > -->
+  <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: absolute; top: 60px; left: 50%; width: 50%; margin-left: -25%" placeholder="文章标题 日期 标签" >
+
+    <!-- 搜索框出现时, 右上角关闭按钮的位置 -->
+      <div style="position: fixed; top: 16px; right: 20px;">
+   <i class="fa fa-times-circle fa-3x" style="color:#3498db" aria-hidden="true" title="Esc to close the search" id="cb-close-btn"></i>
+    </div>
+</div>
+
+    <!-- 右下角搜索按键的位置 -->
+<div style="position: fixed; right: 16px; bottom: 20px;">
+  <i class="fa fa-search fa-3x" style="color:#3498db" aria-hidden="true" title="Double Ctrl to search" id="cb-search-btn"></i>
+</div>
+
+<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
+
+<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>

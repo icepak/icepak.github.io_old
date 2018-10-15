@@ -1,0 +1,38 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/assets/css/bootstrap-4.1.1-modified.css">
+
+<nav>
+  <!-- <h1>热设计/热仿真</h1> -->
+  <h1>Thermal</h1>
+
+  <a href="/">
+    <img src="/assets/img/logo.png" id="logo" alt="Blog logo" />
+  </a>
+
+  <div class="list-group">
+    <a class="list-group-item" href="/"><i class="fa fa-home fa-fw"></i>&nbsp; 首页</a>
+    <a class="list-group-item" href="#"><i class="fa fa-user fa-fw"></i>&nbsp; 关于我</a>
+    <a class="list-group-item card" href="/assets/html/tags.html"><i class="fa fa-tags fa-fw"></i>&nbsp; 标签</a>
+    <a class="list-group-item card bg-primary text-white" href="/assets/html/notes.html"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; 本站须知</a>
+  </div>
+
+  <p>
+
+      <hr/>
+  
+  <div>
+    <div id="social">
+      
+      {% include social.html %}
+      
+    </div>
+  </div>
+  
+    </ul>
+</nav>
+
+
+<!-- 调用 search 功能 -->
+<div id="cb-search-tool">
+  {% include cb-footer-add.html %}
+</div>

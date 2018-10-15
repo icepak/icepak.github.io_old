@@ -1,0 +1,63 @@
+---
+title: Tags
+layout: default
+---
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                </div>
+            </div>
+        </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+
+    <div>
+      
+      <!-- 标签云 -->
+      <div id='tag_cloud' class="tags">
+        {% for tag in site.tags %}
+        <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
+
+      <hr/>
+
+      <!-- 标签列表 -->
+      {% for tag in site.tags %}
+      <div class="one-tag-list">
+	<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">&nbsp{{ tag[0] }}</span>
+
+	<!-- 加入指定宽度的空行  -->
+	<table>
+	  <tr>
+	    <td style="height:5px"></td>
+	  </tr>
+	</table>
+
+	<ul id="blog-posts" class="posts">
+	  {% for post in tag[1] %}
+	  <li><span> &nbsp  {{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+
+
+	<!-- 加入指定宽度的空行  -->
+	<table>
+	  <tr>
+	    <td style="height:5px"></td>
+	  </tr>
+	</table>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

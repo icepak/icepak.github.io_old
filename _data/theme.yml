@@ -1,0 +1,27 @@
+# Theme customization - please change from the defaults!
+
+# Color for top bar, links, etc
+highlight_color: '#3498db'
+
+# Profile links on the left sidebar, leave blank to ignore
+social:
+  #github: thermal
+  twitter: chs513
+  #facebook: chs513
+  #linkedin: chs513
+  email: 2014827387@qq.com
+  QQ: 2014827387
+
+# "Hi, I'm _______"
+name: Eric C.
+email: 2014827387@qq.com
+tagline: "weak opinions, strongly held"
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key:
+
+# Toggle "Postings are my own" disclaimer in footer
+show_disclaimer: true
+
+# Toggle link/icon to view atom feed (/atom.xml) in sidebar
+show_atom_feed: false
